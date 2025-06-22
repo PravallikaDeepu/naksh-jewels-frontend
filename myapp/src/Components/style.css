@@ -1,0 +1,54 @@
+#card
+{
+    margin-left: 25px;
+}
+
+#card-image:hover
+{
+    width: 350px;
+}
+
+#title
+{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+#cart
+{
+    border-radius: 100px;
+}
+
+#proname
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-wrap: wrap;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #card {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
