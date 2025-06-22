@@ -6,11 +6,12 @@ import './style.css'
 function View() {
   const { pNo } = useParams();
   const [myData, setMyData] = useState(null);
+  const api = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const output = await Axios.get("http://localhost:8070/api/products");
+        const output = await Axios.get(`${api}/api/products`);
         const response = output.data;
         const selectedData = response.find(
           (item) => item.productNo.toString() === pNo
