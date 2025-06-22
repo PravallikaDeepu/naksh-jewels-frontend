@@ -12,12 +12,11 @@ import AddCart from './Components/AddCart'
 
 function App() {
   const [myData,setmyData] = useState("")
-const api = process.env.REACT_APP_API_URL;
-console.log(api)
+
  useEffect(()=>{
         const fetchData = async () => {
             try{
-                const output = await Axios.get(`${api}/api/products`)
+                const output = await Axios.get('http://localhost:8070/api/products')
                 setmyData(output.data)
                 console.log(output.data)
                 

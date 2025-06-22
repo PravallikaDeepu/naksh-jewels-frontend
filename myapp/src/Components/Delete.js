@@ -5,13 +5,13 @@ import { useNavigate, useParams } from 'react-router-dom'
 function Delete() {
   const {pNo} = useParams()
   const navigate = useNavigate()
-  const api = process.env.REACT_APP_API_URL;
+  // const api = process.env.REACT_APP_API_URL;
 
   useEffect(()=>
   {
     const fetchData = (async ()=>{
       try{
-        const output = await Axios.delete(`${api}/api/products/${pNo}`)
+        const output = await Axios.delete(`http://localhost:8070/api/products/${pNo}`)
        navigate("/")
 
       }
