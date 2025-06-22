@@ -1,3 +1,19 @@
+# 🛒 Geer Intern Assignment
+
+## 📄 Project Info
+- **Role**: Full Stack Web Development Intern  
+- **Project**: E-commerce Platform inspired by [Geer.in](https://geer.in)  
+- **Goal**: Build a responsive product listing page and backend APIs for product management  
+
+---
+
+## 📁 Folder Structure
+geer-intern-assignment/
+├── frontend/ → Next.js app (product listing page, routing, product detail)
+│ ├── pages/ → Next.js pages directory
+│ ├── components/ → Reusable UI components (optional)
+│ └── public/ → Static files
+└── backend/ → Node.js + Express server (only if using external backend)
 
 ---
 
@@ -49,6 +65,8 @@
 - `DELETE /api/products/:id` → Deletes product by ID  
 - Uses in-memory array or local JSON file
 
+
+
 ---
 
 ## 🚀 How to Run the Project
@@ -69,30 +87,21 @@ npm install
 node server.js
 API available at: http://localhost:8070/api/products
 
-🌐 Deployed Links
-Frontend Live URL: https://naksh-jewels-frontend.onrender.com/
 
-Backend API Base URL: https://naksh-jewels-internship-1.onrender.com/
 
-yaml
-Copy
-Edit
-
+```
+## 🌐 Deployed Links
+- **Frontend Live URL**: [https://naksh-jewels-frontend.onrender.com](https://naksh-jewels-frontend.onrender.com)
+- **Backend API Base URL**: [https://naksh-jewels-internship-1.onrender.com](https://naksh-jewels-internship-1.onrender.com)
 ---
 
-### 📌 What Changed:
-- Properly closed code blocks (` ``` ` on a new line)
-- Wrapped URLs in `< >` so GitHub renders them as **clickable links**
-- Removed stray triple dashes inside code blocks
+## ⚠️ Important Note
+
+- After clicking on a product or navigating to a new page, if the route does not load immediately, **please refresh the page once**.
+- This issue occurs because platforms like **Render** may not support **client-side routing** (e.g., `react-router-dom` or Next.js dynamic routes) on the first direct load of nested URLs.
+- Once refreshed, the navigation and routing will work as expected.
 
 ---
-
-✅ Just update your `README.md` with the corrected section above and commit it. Your deployed links will now be **highlighted and clickable**.
-
-Let me know if you'd like me to return the full updated `README.md` file as a download.
-
-
-
 
 
 
