@@ -68,15 +68,10 @@ npm install
 node server.js
 
 ## API available at: http://localhost:8070/api/products
----
 
 ---
-API available at: http://localhost:8070/api/products
 
 ## 🌐 Deployed Links
 - **Frontend Live URL**: <https://naksh-jewels-frontend.onrender.com/>
 - **Backend API Base URL**: <https://naksh-jewels-internship-1.onrender.com/>
-
-
----
 
