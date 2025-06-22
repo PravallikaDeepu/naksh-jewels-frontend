@@ -9,12 +9,13 @@ function Card() {
   const [myData, setmyData] = useState([]);
   const { searchData } = useContext(SearchContext);
   const navigate = useNavigate();
-// const api = process.env.REACT_APP_API_URL;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8070';
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-                const output = await Axios.get('http://localhost:8070/api/products')
+                // const output = await Axios.get('http://localhost:8070/api/products')
+                const output = await Axios.get(`${API_BASE_URL}/api/products`)
         setmyData(output.data);
       } catch (e) {
         console.log(e);
