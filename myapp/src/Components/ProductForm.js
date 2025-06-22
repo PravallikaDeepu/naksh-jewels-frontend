@@ -11,6 +11,7 @@ const [pimage3, setImage3] = useState("")
 
 const [pprice, setPrice] = useState("")
 const [pdescription,setDescription] = useState("")
+  const api = process.env.REACT_APP_API_URL;
 
 
   useEffect(()=>
@@ -63,7 +64,7 @@ const [pdescription,setDescription] = useState("")
         // console.log(productData)
 
    try {
-      const res = await Axios.post('http://localhost:8070/api/products', productData);
+      const res = await Axios.post(`${api}/api/products`, productData);
       console.log(res.data);
       alert('Product added successfully!');
       setpNo('');
