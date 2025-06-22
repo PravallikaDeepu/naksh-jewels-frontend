@@ -57,21 +57,46 @@
 ```bash
 cd frontend
 npm install
-npm run dev```
-
+npm run dev
 Visit: http://localhost:3000/
 
-### 🖥️ Backend (If using Express)
-```bash
+🖥️ Backend (If using Express)
+bash
+Copy
+Edit
 cd backend
 npm install
 node server.js
+API available at: http://localhost:8070/api/products
 
-## API available at: http://localhost:8070/api/products
+🌐 Deployed Links
+Frontend Live URL: https://naksh-jewels-frontend.onrender.com/
+
+Backend API Base URL: https://naksh-jewels-internship-1.onrender.com/
+
+yaml
+Copy
+Edit
 
 ---
 
-## 🌐 Deployed Links
-- **Frontend Live URL**: <https://naksh-jewels-frontend.onrender.com/>
-- **Backend API Base URL**: <https://naksh-jewels-internship-1.onrender.com/>
+### 📌 What Changed:
+- Properly closed code blocks (` ``` ` on a new line)
+- Wrapped URLs in `< >` so GitHub renders them as **clickable links**
+- Removed stray triple dashes inside code blocks
+
+---
+
+✅ Just update your `README.md` with the corrected section above and commit it. Your deployed links will now be **highlighted and clickable**.
+
+Let me know if you'd like me to return the full updated `README.md` file as a download.
+
+
+
+
+
+
+
+
+
 
